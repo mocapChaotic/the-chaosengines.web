@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal | Work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .letter-spacing-wide {
+                letter-spacing: 0.05em;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white font-sans antialiased text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navigation -->
+        <nav class="py-6 px-4 sm:px-8 lg:px-12 xl:px-16">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-medium letter-spacing-wide">MINIMAL</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="work.html" class="text-gray-800 font-medium">Work</a>
+                    <a href="about.html" class="hover:text-gray-600 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-gray-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" id="menuToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Work Section -->
+        <main class="flex-grow px-4 sm:px-8 lg:px-12 xl:px-16 py-12">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl font-light mb-12 letter-spacing-wide">Selected Work</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Branding, Web Design</p>
+                    </a>
+                    
+                    <!-- Project 2 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">UI/UX, Development</p>
+                    </a>
+                    
+                    <!-- Project 3 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Art Direction</p>
+                    </a>
+                    
+                    <!-- Project 4 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Brand Identity</p>
+                    </a>
+                    
+                    <!-- Project 5 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Packaging Design</p>
+                    </a>
+                    
+                    <!-- Project 6 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Illustration</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 sm:px-8 lg:px-12 xl:px-16 border-t border-gray-100">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0 letter-spacing-wide">© 2023 Minimal. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">Twitter</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">Instagram</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center hidden">
+        <button id="closeMenu" class="absolute top-6 right-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="flex flex-col items-center space-y-8">
+            <a href="index.html" class="text-2xl hover:text-gray-600 transition-colors">Home</a>
+            <a href="work.html" class="text-2xl text-gray-800 font-medium">Work</a>
+            <a href="about.html" class="text-2xl hover:text-gray-600 transition-colors">About</a>
+            <a href="contact.html" class="text-2xl hover:text-gray-600 transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuButton = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal | Work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .letter-spacing-wide {
+                letter-spacing: 0.05em;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white font-sans antialiased text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navigation -->
+        <nav class="py-6 px-4 sm:px-8 lg:px-12 xl:px-16">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-medium letter-spacing-wide">MINIMAL</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="work.html" class="text-gray-800 font-medium">Work</a>
+                    <a href="about.html" class="hover:text-gray-600 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-gray-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" id="menuToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Work Section -->
+        <main class="flex-grow px-4 sm:px-8 lg:px-12 xl:px-16 py-12">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl font-light mb-12 letter-spacing-wide">Selected Work</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Branding, Web Design</p>
+                    </a>
+                    
+                    <!-- Project 2 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">UI/UX, Development</p>
+                    </a>
+                    
+                    <!-- Project 3 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Art Direction</p>
+                    </a>
+                    
+                    <!-- Project 4 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Brand Identity</p>
+                    </a>
+                    
+                    <!-- Project 5 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Packaging Design</p>
+                    </a>
+                    
+                    <!-- Project 6 -->
+                    <a href="#" class="group">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-100 mb-4 overflow-hidden">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-400">Project Image</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-medium group-hover:underline">Project Title</h3>
+                        <p class="text-gray-600 mt-1">Illustration</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 sm:px-8 lg:px-12 xl:px-16 border-t border-gray-100">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0 letter-spacing-wide">© 2023 Minimal. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">Twitter</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">Instagram</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center hidden">
+        <button id="closeMenu" class="absolute top-6 right-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="flex flex-col items-center space-y-8">
+            <a href="index.html" class="text-2xl hover:text-gray-600 transition-colors">Home</a>
+            <a href="work.html" class="text-2xl text-gray-800 font-medium">Work</a>
+            <a href="about.html" class="text-2xl hover:text-gray-600 transition-colors">About</a>
+            <a href="contact.html" class="text-2xl hover:text-gray-600 transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuButton = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+    </script>
+</body>
+                                  </html>
