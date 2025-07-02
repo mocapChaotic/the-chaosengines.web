@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    spacing: {
+                        '128': '32rem',
+                        '144': '36rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .letter-spacing-wide {
+                letter-spacing: 0.05em;
+            }
+            .letter-spacing-wider {
+                letter-spacing: 0.1em;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white font-sans antialiased text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navigation -->
+        <nav class="py-6 px-4 sm:px-8 lg:px-12 xl:px-16">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-medium letter-spacing-wide">MINIMAL</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="work.html" class="hover:text-gray-600 transition-colors">Work</a>
+                    <a href="about.html" class="hover:text-gray-600 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-gray-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" id="menuToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <main class="flex-grow flex items-center justify-center px-4 sm:px-8 lg:px-12 xl:px-16 py-12">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight leading-tight mb-8 letter-spacing-wide">
+                    Simplicity is the ultimate sophistication.
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 mb-12 max-w-2xl mx-auto letter-spacing-wide">
+                    We create digital experiences that are clean, functional, and beautiful. Less is more in our approach to design.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="work.html" class="px-8 py-3 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">
+                        View Our Work
+                    </a>
+                    <a href="about.html" class="px-8 py-3 text-gray-800 hover:underline transition-colors">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 sm:px-8 lg:px-12 xl:px-16 border-t border-gray-100">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0 letter-spacing-wide">© 2023 Minimal. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">Twitter</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">Instagram</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center hidden">
+        <button id="closeMenu" class="absolute top-6 right-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="flex flex-col items-center space-y-8">
+            <a href="index.html" class="text-2xl hover:text-gray-600 transition-colors">Home</a>
+            <a href="work.html" class="text-2xl hover:text-gray-600 transition-colors">Work</a>
+            <a href="about.html" class="text-2xl hover:text-gray-600 transition-colors">About</a>
+            <a href="contact.html" class="text-2xl hover:text-gray-600 transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuButton = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+    </script>
+</body>
+</html>
